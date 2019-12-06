@@ -1,0 +1,43 @@
+{
+  "name": "taxi-syntax-highlighting",
+  "displayName": "Taxi Syntax Highlighting",
+  "description": "Syntax Highlighting for taxi timesheet files",
+  "version": "1.0.0",
+  "author": "Benoît Burgener",
+  "publisher": "LeBen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lebenleben/taxi-syntax-highlighting"
+  },
+  "homepage": "https://github.com/lebenleben/taxi-syntax-highlighting",
+  "bugs": "https://github.com/lebenleben/taxi-syntax-highlighting/issues",
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "taxi",
+        "aliases": [
+          "Taxi",
+          "taxi"
+        ],
+        "extensions": [
+          ".tks"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "taxi",
+        "scopeName": "source.taxi",
+        "path": "./syntaxes/taxi.tmLanguage.json"
+      }
+    ]
+  }
+}
